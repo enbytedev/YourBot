@@ -8,7 +8,7 @@ module.exports = class a0Command extends Command {
 		super(client, {
 			name: 'a2',
 			group: 'first',
-			description: 'Urent announcement.',
+			description: 'Urgent announcement.',
 			memberName: 'urgent',
 			clientPermissions: ['ADMINISTRATOR'],
 			userPermissions: ['ADMINISTRATOR'],
