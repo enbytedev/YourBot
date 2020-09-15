@@ -1,2 +1,2 @@
 # A-Bot
- Tommy's basic Discord bot.
+ Apex's basic Discord bot.
