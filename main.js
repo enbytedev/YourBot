@@ -6,14 +6,14 @@ const {token} = require('./config.json');
 const client = new CommandoClient({
   commandPrefix: '.',
   owner: '259063263604506634',
-  invite: 't',
+  invite: '',
 });
 
 client.registry
   .registerDefaultTypes()
   .registerGroups([
-    ['first', 'Admin commands.'],
-    ['second', 'Fun commands.'],
+    ['first', 'Admin commands'],
+    ['second', 'Fun commands'],
   ])
   .registerDefaultGroups()
   .registerDefaultCommands()
