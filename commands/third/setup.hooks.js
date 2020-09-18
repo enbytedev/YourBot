@@ -18,7 +18,7 @@ module.exports = class a0Command extends Command {
 
 	run(message) {
 		message.delete()
-		channel.createWebhook('PewDiePie', {
+		message.channel.createWebhook('PewDiePie', {
 			avatar: 'https://i.imgur.com/Q9va3Sl.jpg',
 		}).then(webhook => console.log(`Created webhook ${webhook}`)).catch(console.error);
 }};

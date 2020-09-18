@@ -7,12 +7,13 @@ const {hook_url} = require('../commandconf.json');
 module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
-			name: 'pdp',
+			name: 'h.cw',
 			group: 'third',
-			description: 'Mind control? Yes.',
-			memberName: 'pdp',
+			description: 'ConnorWake control? Yes.',
+			memberName: 'h.cw',
 			clientPermissions: [],
 			userPermissions: [],
+		    ownerOnly: true,
 		});
 	}
 
@@ -22,8 +23,8 @@ module.exports = class a0Command extends Command {
 		const { Webhook } = require('discord-webhook-node');
 		const hook = new Webhook(`${hook_url}`);
 		 
-		const IMAGE_URL = 'https://i.imgur.com/Q9va3Sl.jpg';
-		hook.setUsername('PewDiePie');
+		const IMAGE_URL = 'https://i.imgur.com/6hs5UqU.png';
+		hook.setUsername('ConnorWake');
 		hook.setAvatar(IMAGE_URL);
 		 
 		hook.send(message.content.split(" ").slice(1).join(" "));

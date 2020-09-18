@@ -14,6 +14,7 @@ client.registry
   .registerGroups([
     ['first', 'Admin commands'],
     ['second', 'Fun commands'],
+    ['third', 'Funny Misc. commands'],
   ])
   .registerDefaultGroups()
   .registerDefaultCommands()
