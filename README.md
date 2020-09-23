@@ -4,7 +4,7 @@ This is my attempt at a Discord bot. If it has any bugs, please report them priv
 YOU MAY NOT SELL ANY PORTION OF THIS BOT! PLEASE FORK DERIVATIVES PUBLICLY! If you wish to contribute, please submit an issue!
 
 # You may use my bot...
-I have nothing special, but I ask that you link to me in some way, shape, or form. Great ideas come from great people. I simply ask that you credit me by linking C-Apex (GitHub).
+I have nothing special, but I ask that you link to me in some way, shape, or form. I simply ask that you credit me by linking C-Apex (GitHub).
 
 # Setup
 `git clone` it to your machine.
