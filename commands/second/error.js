@@ -12,19 +12,19 @@ module.exports = class a0Command extends Command {
 			description: 'Tell someone they need a stacktrace if they want help.',
 			memberName: 'error',
 			clientPermissions: ['ADMINISTRATOR'],
-			userPermissions: [],
+			userPermissions: ['ADMINISTRATOR'],
 		});
 	}
 
 	run(message) {
-		
+const attachment = new Discord
+	.MessageAttachment('./assets/second/error.jpg', 'error.jpg');
 const emb = new Discord.MessageEmbed()
 	.setColor('57099')
 	.setTitle('Here ye, here ye!')
-	.setDescription('The troubleshooting team has identified the issue! PEBCAK!')
-	.setImage('https://i.imgur.com/KGghumh.jpg')
-	.setTimestamp()
-	.setFooter(`Signed, your ${server_name} support team`, `${branding}`);
+	.setDescription(`The ${server_name} support team has identified the issue! PEBCAK!`)
+	.attachFiles(attachment)
+	.setImage('attachment://error.jpg');
 	message.delete()
 	message.channel.send(emb);
 		

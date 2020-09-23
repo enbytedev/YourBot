@@ -27,14 +27,16 @@ module.exports = class a0Command extends Command {
 		return message.reply('You need to tag a user in order to test them!');
 		message.delete()
 	}
-	
-		const imposter = new Discord.MessageEmbed()
-			.setColor('#0099ff')
-			.setTitle('The Among Us Test')
-			.setDescription(`${taggedUser.username} is ${stat[Math.floor(Math.random() * stat.length)]}!`)
-			.setThumbnail('https://i.imgur.com/Bb4SxSu.png')
-			.setTimestamp()
-			.setFooter('Inspired by Among Us');
-		message.delete()
-		message.channel.send(imposter);
+		
+		const attachment = new Discord
+	.MessageAttachment('./assets/second/au.png', 'au.png');
+		const au = new Discord.MessageEmbed()
+	.setColor('#0099ff')
+	.setTitle('The Among Us Test')
+	.setDescription(`${taggedUser.username} is ${stat[Math.floor(Math.random() * stat.length)]}!`)
+	.attachFiles(attachment)
+	.setThumbnail('attachment://au.png');
+
+			message.delete()
+		message.channel.send(au);
 }};

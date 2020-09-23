@@ -16,12 +16,14 @@ module.exports = class a0Command extends Command {
 	}
 
 	run(message) {
-		
+		const attachment = new Discord
+		.MessageAttachment('./assets/second/squid.png', 'squid.png');
 		let say = new Discord.MessageEmbed() //embed
 		.setTitle("What is your squidward today?")
 		.setDescription('The council will decide your fate later... not now.')
 		.setColor(852124)
-		.setImage('https://i.imgur.com/vQi2ZMb.png');
+		.attachFiles(attachment)
+		.setImage('attachment://squid.png');
 	 message.delete()
 	 message.channel.send(say).then(sentEmbed => {
 		sentEmbed.react("1️⃣")

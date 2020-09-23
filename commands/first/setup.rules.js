@@ -33,7 +33,7 @@ module.exports = class a0Command extends Command {
 	.setDescription('These are the text chat Discord rules!')
 	.setColor(852124)
 	.addField('➤ Do not randomly or repeatedly ping (@) people.', '➤ Do not mass mention!')
-	.addField('➤ No sexually explicit or discriminatory conetent!', '➤ Do not leak personal information!')
+	.addField('➤ No sexually explicit or discriminatory content!', '➤ Do not leak personal information!')
 	
 			//VOICE CHAT
 			let sayVoice = new Discord.MessageEmbed() //embed
