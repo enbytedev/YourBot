@@ -9,11 +9,10 @@ module.exports = class a0Command extends Command {
 		super(client, {
 			name: 'h.pdp',
 			group: 'third',
-			description: 'PewDiePie control? Yes.',
+			description: 'PewDiePie. | `.h.pdp <Message to repeat>`',
 			memberName: 'h.pdp',
-			clientPermissions: [],
+			clientPermissions: ['MANAGE_WEBHOOKS', 'SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],
 			userPermissions: ['ADMINISTRATOR'],
-		    ownerOnly: true,
 		});
 	}
 

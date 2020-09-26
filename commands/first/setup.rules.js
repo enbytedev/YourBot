@@ -1,6 +1,6 @@
 const { Command } = require('discord.js-commando');
 const Discord = require("discord.js");
-const {branding} = require('../commandconf.json');
+const {logo} = require('../commandconf.json');
 const {server_name} = require('../commandconf.json');
 
 module.exports = class a0Command extends Command {
@@ -8,9 +8,9 @@ module.exports = class a0Command extends Command {
 		super(client, {
 			name: 'setup.rules',
 			group: 'first',
-			description: 'Generate rule text.',
-			memberName: 'rules',
-			clientPermissions: ['ADMINISTRATOR'],
+			description: 'Generate rule text. | `.setup.rules`',
+			memberName: 'setup.rules',
+			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],
 			userPermissions: ['ADMINISTRATOR'],
 		});
 	}
@@ -19,7 +19,7 @@ module.exports = class a0Command extends Command {
 			//GENERAL
 			let sayGeneral = new Discord.MessageEmbed() //embed
 	.setTitle("General Server Rules")
-	.setThumbnail(`${branding}`)
+	.setThumbnail(`${logo}`)
 	.setDescription('These are the general Discord rules!')
 	.setColor(852124)
 	.addField('➤ No blank nicknames', '➤ No inappropriate nicknames.')
@@ -29,7 +29,7 @@ module.exports = class a0Command extends Command {
 			//TEXT CHAT
 			let sayText = new Discord.MessageEmbed() //embed
 	.setTitle("Text Chat Rules")
-	.setThumbnail(`${branding}`)
+	.setThumbnail(`${logo}`)
 	.setDescription('These are the text chat Discord rules!')
 	.setColor(852124)
 	.addField('➤ Do not randomly or repeatedly ping (@) people.', '➤ Do not mass mention!')
@@ -38,7 +38,7 @@ module.exports = class a0Command extends Command {
 			//VOICE CHAT
 			let sayVoice = new Discord.MessageEmbed() //embed
 	.setTitle("Voice Chat Rules")
-	.setThumbnail(`${branding}`)
+	.setThumbnail(`${logo}`)
 	.setDescription('These are the voice chat Discord rules!')
 	.setColor(852124)
 	.addField('➤ "Ear-R*pe" and/or other intentional screeching is unneccesary, annoying, and therefore disallowed.', '➤ Stay appropriate! All text chat rules apply!')
@@ -46,7 +46,7 @@ module.exports = class a0Command extends Command {
 			//FINAL WORDS
 			let sayFinal = new Discord.MessageEmbed() //embed
 	.setTitle("Final Words")
-	.setThumbnail(`${branding}`)
+	.setThumbnail(`${logo}`)
 	.setDescription('These rules are based on common sense. Be a kind, respectful and senseful member of the community and you will always have the benefit of the doubt!')
 	.setColor(9895936)
 	.addField('➤ By participating and entering the server, you agree to abide by the rules to the best of your ability.', '➤ In moving to the main chat, you confirm you have read and agreed to the rules.')

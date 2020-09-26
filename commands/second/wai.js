@@ -1,6 +1,6 @@
 const { Command } = require('discord.js-commando');
 const Discord = require("discord.js");
-const {branding} = require('../commandconf.json');
+const {logo} = require('../commandconf.json');
 const {server_name} = require('../commandconf.json');
 
 const attr = [
@@ -20,9 +20,9 @@ module.exports = class a0Command extends Command {
 		super(client, {
 			name: 'wai',
 			group: 'second',
-			description: 'What are you?',
+			description: 'What are you? | `.wai`',
 			memberName: 'wai',
-			clientPermissions: ['ADMINISTRATOR'],
+			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],
 			userPermissions: [],
 		});
 	}
@@ -35,7 +35,7 @@ module.exports = class a0Command extends Command {
 			.setTitle("You have become:")
 			.setDescription("100% poopyfuck")
 			.setColor(57099)
-				.setFooter('I said no retrys, bitch. Wait five minutes (from last usage) to get a better result.');
+				.setFooter('I said no retrys, stupid. Wait five minutes (from last usage) to get a better result.');
 		message.author.send(wait);
 					 message.delete()
 		} else {
@@ -51,7 +51,7 @@ module.exports = class a0Command extends Command {
 						.setTitle(message.member.user.tag+" is currently:")
 						.setDescription(Math.floor(Math.random() * 100)+"% "+attr[Math.floor(Math.random() * attr.length)])
 						.setColor(57099)
-						.setFooter('You are what you get first. No re-trys, bitch.');
+						.setFooter('You are what you get first. No re-trys.');
 					message.channel.send(wai);
 
 				// Adds the user to the set so that they can't talk for a minute

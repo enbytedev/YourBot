@@ -1,6 +1,6 @@
 const { Command } = require('discord.js-commando');
 const Discord = require("discord.js");
-const {branding} = require('../commandconf.json');
+const {logo} = require('../commandconf.json');
 const {server_name} = require('../commandconf.json');
 
 module.exports = class a0Command extends Command {
@@ -8,9 +8,9 @@ module.exports = class a0Command extends Command {
 		super(client, {
 			name: 'a1',
 			group: 'first',
-			description: 'Announcement.',
+			description: 'Announcement. | `.a1 <Announcement Message>`',
 			memberName: 'announce',
-			clientPermissions: ['ADMINISTRATOR'],
+			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],
 			userPermissions: ['ADMINISTRATOR'],
 		});
 	}
@@ -21,7 +21,7 @@ module.exports = class a0Command extends Command {
 		.setDescription("Please read this carefully, as it might affect you in some way.")
 		.setColor(15300096)
 		.addField(message.member.user.tag+' on behalf of the team:', message.content.split(" ").slice(1).join(" "))
-	.setFooter(`Signed, your ${server_name} team`, `${branding}`);
+	.setFooter(`Signed, your ${server_name} team`, `${logo}`);
 		message.delete()
 		message.channel.send(say);
 	}

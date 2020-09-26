@@ -7,10 +7,10 @@ module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'setup.hooks',
-			group: 'first',
-			description: 'Setup webhooks.',
+			group: 'third',
+			description: 'Setup webhooks. | `.setup.hooks`',
 			memberName: 'setup.hooks',
-			clientPermissions: [],
+			clientPermissions: ['MANAGE_WEBHOOKS', 'SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],
 			userPermissions: [],
 		    ownerOnly: true,
 		});
@@ -18,7 +18,7 @@ module.exports = class a0Command extends Command {
 
 	run(message) {
 		message.delete()
-		message.channel.createWebhook('PewDiePie', {
+		message.channel.createWebhook('Initial Webhook', {
 			avatar: 'https://i.imgur.com/Q9va3Sl.jpg',
 		}).then(webhook => console.log(`Created webhook ${webhook}`)).catch(console.error);
 }};

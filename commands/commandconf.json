@@ -1,5 +1,5 @@
 {
-	"branding": "https://i.imgur.com/xxxxx.png",
+	"logo": "https://i.imgur.com/xxxxx.png",
 	"server_name": "NAME",
 	"hook_url": "https://discordapp.com/api/webhooks/xxxxx/xxxxx"
 }

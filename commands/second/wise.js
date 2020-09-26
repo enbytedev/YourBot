@@ -1,6 +1,6 @@
 const { Command } = require('discord.js-commando');
 const Discord = require("discord.js");
-const {branding} = require('../commandconf.json');
+const {logo} = require('../commandconf.json');
 const {server_name} = require('../commandconf.json');
 const request = require("request");
 
@@ -9,9 +9,9 @@ module.exports = class a0Command extends Command {
 		super(client, {
 			name: 'wise',
 			group: 'second',
-			description: 'Get an Inspirobot Quote.',
-			memberName: 'wisdom',
-			clientPermissions: ['ADMINISTRATOR'],
+			description: 'Get an Inspirobot Quote. | `.wise`',
+			memberName: 'wise',
+			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],
 			userPermissions: [],
 		});
 	}

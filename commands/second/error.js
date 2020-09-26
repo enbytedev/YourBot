@@ -1,6 +1,6 @@
 const { Command } = require('discord.js-commando');
 const Discord = require("discord.js");
-const {branding} = require('../commandconf.json');
+const {logo} = require('../commandconf.json');
 const {server_name} = require('../commandconf.json');
 const { MessageEmbed } = require("discord.js");
 
@@ -9,9 +9,9 @@ module.exports = class a0Command extends Command {
 		super(client, {
 			name: 'error',
 			group: 'second',
-			description: 'Tell someone they need a stacktrace if they want help.',
+			description: 'Tell someone they need a stacktrace if they want help. | `.error`',
 			memberName: 'error',
-			clientPermissions: ['ADMINISTRATOR'],
+			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],
 			userPermissions: ['ADMINISTRATOR'],
 		});
 	}

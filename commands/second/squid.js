@@ -1,6 +1,6 @@
 const { Command } = require('discord.js-commando');
 const Discord = require("discord.js");
-const {branding} = require('../commandconf.json');
+const {logo} = require('../commandconf.json');
 const {server_name} = require('../commandconf.json');
 
 module.exports = class a0Command extends Command {
@@ -8,9 +8,9 @@ module.exports = class a0Command extends Command {
 		super(client, {
 			name: 'squid',
 			group: 'second',
-			description: 'Daily Squidward',
+			description: 'Daily Squidward | `.squid`',
 			memberName: 'squid',
-			clientPermissions: ['ADMINISTRATOR'],
+			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'ADD_REACTIONS', 'MANAGE_MESSAGES'],
 			userPermissions: [],
 		});
 	}
@@ -19,7 +19,7 @@ module.exports = class a0Command extends Command {
 		const attachment = new Discord
 		.MessageAttachment('./assets/second/squid.png', 'squid.png');
 		let say = new Discord.MessageEmbed() //embed
-		.setTitle("What is your squidward today?")
+		.setTitle("What is your Squidward today?")
 		.setDescription('The council will decide your fate later... not now.')
 		.setColor(852124)
 		.attachFiles(attachment)

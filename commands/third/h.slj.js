@@ -9,11 +9,10 @@ module.exports = class a0Command extends Command {
 		super(client, {
 			name: 'h.slj',
 			group: 'third',
-			description: 'Samuel L Jackson control? Yes.',
+			description: 'Samuel L Jackson control. | `.h.slj <Message to repeat>`',
 			memberName: 'h.slj',
-			clientPermissions: [],
+			clientPermissions: ['MANAGE_WEBHOOKS', 'SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],
 			userPermissions: ['ADMINISTRATOR'],
-		    ownerOnly: true,
 		});
 	}
 

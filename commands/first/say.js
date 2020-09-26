@@ -1,6 +1,6 @@
 const { Command } = require('discord.js-commando');
 const Discord = require("discord.js");
-const {branding} = require('../commandconf.json');
+const {logo} = require('../commandconf.json');
 const {server_name} = require('../commandconf.json');
 
 module.exports = class a0Command extends Command {
@@ -8,9 +8,9 @@ module.exports = class a0Command extends Command {
 		super(client, {
 			name: 'say',
 			group: 'first',
-			description: 'Speak a message.',
+			description: 'Echo a message. | `.say <Message to repeat>`',
 			memberName: 'say',
-			clientPermissions: ['ADMINISTRATOR'],
+			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],
 			userPermissions: ['ADMINISTRATOR'],
 		});
 	}

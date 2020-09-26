@@ -1,6 +1,6 @@
 const { Command } = require('discord.js-commando');
 const Discord = require("discord.js");
-const {branding} = require('../commandconf.json');
+const {logo} = require('../commandconf.json');
 const {server_name} = require('../commandconf.json');
 
 const stat = [
@@ -14,9 +14,9 @@ module.exports = class a0Command extends Command {
 		super(client, {
 			name: 'au',
 			group: 'second',
-			description: 'Who is Among Us?',
+			description: 'Who is Among Us? | `.au @user`',
 			memberName: 'au',
-			clientPermissions: ['ADMINISTRATOR'],
+			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],
 			userPermissions: [],
 		});
 	}
