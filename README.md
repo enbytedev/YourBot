@@ -1,15 +1,20 @@
 # A-Bot
 This is my attempt at a Discord bot. If it has any bugs, please report them privately.
 
-YOU MAY NOT SELL ANY PORTION OF THIS BOT! PLEASE FORK DERIVATIVES PUBLICLY! If you wish to contribute, please contact me on Discord (Apex#4766)!
-
-# Credits:
-Commando.JS - Main command handler functionality.
-Imgur - Image hosting.
+YOU MAY NOT SELL ANY PORTION OF THIS BOT! PLEASE FORK DERIVATIVES PUBLICLY! If you wish to contribute, please submit an issue!
 
 # You may use my bot...
-I have nothing special, but I ask that you link to me in some way, shape, or form. Great ideas come from great people. I did not do this on my own; I credited the people who chose to help me. We simply ask you do the same by linking the appropriate names in the CREDITS, plus C-Apex (GitHub).
-(Note to future self;
-The branding is in commands/commandconf.json
-The webhook must be created after the bot’s addition and before usage of .h.x commands.
-The token is in config.json)
+I have nothing special, but I ask that you link to me in some way, shape, or form. I simply ask that you credit me by linking C-Apex (GitHub).
+
+# Setup
+`git clone` it to your machine.
+
+`npm i` in the working directory to install dependencies.
+
+Set token in config.json
+
+Customize branding in commands/commandconf.json
+
+It is highly reccomended that you install PM2, a node process manager.
+
+**Note:** The webhook must be created after the bot's startup and before usage of .h.x commands.
