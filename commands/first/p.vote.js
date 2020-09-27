@@ -1,8 +1,8 @@
 // Thanks slothiful on StackOverflow!
 const { Command } = require('discord.js-commando');
 const Discord = require("discord.js");
-const {logo} = require('../commandconf.json');
-const {server_name} = require('../commandconf.json');
+const {logo} = require('../../config/branding.json');
+const {server_name} = require('../../config/branding.json');
 
 module.exports = class a0Command extends Command {
 	constructor(client) {

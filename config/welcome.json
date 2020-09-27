@@ -1,0 +1,9 @@
+{
+  "welcome_channel_id": "0000000000000",
+  "field1": "Please check #rules for our rules!",
+  "field2": "Server information in #info!",
+  "field3": "Announcements are \nin #announcements!",
+  "icon1": ":warning:",
+  "icon2": ":information_source:",
+  "icon3": ":loudspeaker:"
+}

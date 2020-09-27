@@ -1,10 +1,10 @@
 const { CommandoClient } = require('discord.js-commando');
 const path = require('path');
 const Discord = require("discord.js");
-const {token} = require('./config.json'); 
-const {logo} = require('./commands/commandconf.json');
-const {server_name} = require('./commands/commandconf.json');
-const {welcome_channel_id} = require('./commands/commandconf.json');
+const {token} = require('../../config/token.json');
+const {logo} = require('../../config/branding.json');
+const {server_name} = require('../../config/branding.json');
+const {welcome_channel_id} = require('../../config/welcome.json');
 const client = new CommandoClient({
   commandPrefix: '.',
   owner: '259063263604506634',
@@ -19,9 +19,9 @@ const welcomeEmbed = new Discord.MessageEmbed()
 .setTitle(`Please Welcome ${server_name}'s Newest Member!`)
 .setDescription(`Please help us welcome ${member.user} to ${server_name}!`)
 .addFields(
-  { name: ':warning:', value: 'Please check #rules for our rules!', inline: true },
-  { name: ':information_source:', value: 'Server information in #info!', inline: true },
-  { name: ':loudspeaker:', value: 'Announcements are \nin #announcements!', inline: true },
+  { name: `${icon1}`, value: `${field1}`, inline: true },
+  { name: `${icon2}`, value: `${field2}`, inline: true },
+  { name: `${icon3}`, value: `${field3}`, inline: true },
 )
 .setTimestamp()
 .setFooter(`Signed, your ${server_name} team.`, `${logo}`);

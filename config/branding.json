@@ -1,6 +1,5 @@
 {
 	"logo": "https://i.imgur.com/xxxxx.png",
 	"server_name": "NAME",
-	"welcome_channel_id": "0000000000000",
 	"hook_url": "https://discordapp.com/api/webhooks/xxxxx/xxxxx"
 }
