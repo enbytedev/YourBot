@@ -1,10 +1,18 @@
 const { CommandoClient } = require('discord.js-commando');
 const path = require('path');
 const Discord = require("discord.js");
-const {token} = require('../../config/token.json');
-const {logo} = require('../../config/branding.json');
-const {server_name} = require('../../config/branding.json');
-const {welcome_channel_id} = require('../../config/welcome.json');
+const {token} = require('./config/token.json');
+const {logo} = require('./config/branding.json');
+const {server_name} = require('./config/branding.json');
+
+const {welcome_channel_id} = require('./config/welcome.json');
+const {icon1} = require('./config/welcome.json');
+const {icon2} = require('./config/welcome.json');
+const {icon3} = require('./config/welcome.json');
+const {field1} = require('./config/welcome.json');
+const {field2} = require('./config/welcome.json');
+const {field3} = require('./config/welcome.json');
+
 const client = new CommandoClient({
   commandPrefix: '.',
   owner: '259063263604506634',
