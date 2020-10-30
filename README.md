@@ -1,5 +1,5 @@
 # A-Bot
-This is my attempt at a Discord bot. If it has any bugs, please report them privately.
+This is my attempt at a Discord bot. If it has any bugs, please open an issue.
 
 YOU MAY NOT SELL ANY PORTION OF THIS BOT!
 
