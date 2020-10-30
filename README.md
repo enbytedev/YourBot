@@ -11,9 +11,10 @@ I have nothing special, but I ask that you link to me in some way, shape, or for
 
 `npm i` in the working directory to install dependencies.
 
-Set token in config.json
+Set token in `config/token.json`
+Add welcome message (optional) in `config/welcome.json`
+Customize branding in `config/branding.json`
 
-Customize branding in commands/commandconf.json
 
 It is highly reccomended that you install PM2, a node process manager.
 
