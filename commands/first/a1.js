@@ -16,12 +16,18 @@ module.exports = class a0Command extends Command {
 	}
 
 	run(message) {
+		const attachment = new Discord
+		.MessageAttachment('./assets/icons/announcement.png', 'announcement.png')
+		
 		let say = new Discord.MessageEmbed() //embed
 		.setTitle(`${server_name} Announcement`)
-		.setDescription("Please read this carefully, as it might affect you in some way.")
-		.setColor(15300096)
-		.addField(message.member.user.tag+' on behalf of the team:', message.content.split(" ").slice(1).join(" "))
-	.setFooter(`Signed, your ${server_name} team`, `${logo}`);
+	.setDescription(message.content.split(" ").slice(1).join(" "))
+	.setColor(15300096)
+	.attachFiles(attachment)
+	.addField('\u200b', '\u200b')
+	.addField(`This is an official announcement!`, `Please read this carefully, as it might affect you in some way.`)
+	.setThumbnail('attachment://announcement.png')
+	.setFooter(`Signed, ${message.member.user.tag} on behalf of the ${server_name} team.`, `${logo}`);
 		message.delete()
 		message.channel.send(say);
 	}

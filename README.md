@@ -23,3 +23,7 @@ Customize branding in `config/branding.json`
 It is highly reccomended that you install PM2, a node process manager.
 
 **Note:** The webhook must be created after the bot's startup and before usage of .h.x commands.
+
+# Credits
+
+Icons by: Freepik, Smashicons
