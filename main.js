@@ -43,6 +43,7 @@ client.registry
     ['first', 'Admin commands'],
     ['second', 'Fun commands'],
     ['third', 'Webhook commands'],
+    ['fourth', 'User commands'],
   ])
   .registerDefaultGroups()
   .registerDefaultCommands()
