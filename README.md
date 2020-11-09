@@ -3,6 +3,11 @@ This is my attempt at a Discord bot. If it has any bugs, please open an issue.
 
 YOU MAY NOT SELL ANY PORTION OF THIS BOT!
 
+# Screenshots
+Here are just a few screenshots of a couple commands!
+
+https://imgur.com/a/ibivuSs
+
 # You may use my bot...
 I have nothing special, but I ask that you link to me in some way, shape, or form. I simply ask that you credit me by linking C-Apex (GitHub).
 
