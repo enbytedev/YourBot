@@ -5,6 +5,9 @@ const {token} = require('./config/token.json');
 const {logo} = require('./config/branding.json');
 const {server_name} = require('./config/branding.json');
 
+const {owner_id} = require('./config/admin.json');
+const {prefix} = require('./config/admin.json');
+
 const {welcome_channel_id} = require('./config/welcome.json');
 const {icon1} = require('./config/welcome.json');
 const {icon2} = require('./config/welcome.json');
@@ -14,8 +17,8 @@ const {field2} = require('./config/welcome.json');
 const {field3} = require('./config/welcome.json');
 
 const client = new CommandoClient({
-  commandPrefix: '.',
-  owner: '259063263604506634',
+  commandPrefix: `${prefix}`,
+  owner: `${owner_id}`,
   invite: '',
 	unknownCommandResponse: false,
 });
