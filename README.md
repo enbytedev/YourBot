@@ -22,7 +22,11 @@ Set token in `config/token.json`
 
 Add welcome message (optional) in `config/welcome.json`
 
+Channels specific to commands and other possible future functions can be defined in `config/channels.json`
+
 Customize branding in `config/branding.json`
+
+Set owner ID and command prefix in `config/admin.json`
 
 # Operation
 It is highly reccomended that you install PM2, a node process manager.
