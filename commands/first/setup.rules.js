@@ -17,45 +17,32 @@ module.exports = class a0Command extends Command {
 
 	run(message) {
 			//GENERAL
-			let sayGeneral = new Discord.MessageEmbed() //embed
-	.setTitle("General Server Rules")
-	.setThumbnail(`${logo}`)
-	.setDescription('These are the general Discord rules!')
-	.setColor(852124)
-	.addField('➤ No blank nicknames', '➤ No inappropriate nicknames.')
-	.addField('➤ No inappropriate profile pictures.', '➤ ZERO TOLERANCE for harassment or hate speech of any kind!')
-	.addField('➤ No exploiting loopholes in the rules (please report them).', '➤ Use common sense.')
-	
-			//TEXT CHAT
-			let sayText = new Discord.MessageEmbed() //embed
-	.setTitle("Text Chat Rules")
-	.setThumbnail(`${logo}`)
-	.setDescription('These are the text chat Discord rules!')
-	.setColor(852124)
-	.addField('➤ Do not randomly or repeatedly ping (@) people.', '➤ Do not mass mention!')
-	.addField('➤ No sexually explicit or discriminatory content!', '➤ Do not leak personal information!')
-	
-			//VOICE CHAT
-			let sayVoice = new Discord.MessageEmbed() //embed
-	.setTitle("Voice Chat Rules")
-	.setThumbnail(`${logo}`)
-	.setDescription('These are the voice chat Discord rules!')
-	.setColor(852124)
-	.addField('➤ "Ear-R*pe" and/or other intentional screeching is unneccesary, annoying, and therefore disallowed.', '➤ Stay appropriate! All text chat rules apply!')
+			let sayChat = new Discord.MessageEmbed() //embed
+	.setAuthor('Chat Infractions', `${logo}`)
+	.setDescription('These are the basic chat rules! Staff reserve the right to moderate at their discretion.')
+	.setColor(2549570)
+	.addField('➤ Stay Respectful', `>>> Refrain from causing drama. Do not threaten, harass or start arguments with members within ${server_name}. We maintain **zero tolerance** for harassment or hate speech of any kind!`)
+	.addField('➤ Remain SFW', `>>> Names, nicknames, profile pictures, external emojis and other forms of content are requested to stay generally SFW. Memes may bend the rules so long as nudity, gore or otherwise NSFW aspects do not make apearances.`)
+	.addField('➤ Chat Etiquette', `>>> We respect all people, however we have difficulty moderating different languages. For this reason, we ask that members speak in **English** only. Furthermore, we request players to refrain from spamming (including chained mesages,) excessive caps, or advertising anything unrelated to ${server_name}.`)	
+	.addField('➤ Voice Chat Etiquette', `>>> "Ear-R*pe" and/or other intentional screeching is unneccesary, annoying, and therefore disallowed. All text chat rules apply.`)	
+	.addField('➤ Other Rules', `>>> Do not leak personal information, repeatedly ping or mass mention.`)	
 
-			//FINAL WORDS
+			let sayPS = new Discord.MessageEmbed() //embed
+	.setAuthor('Other Information', `${logo}`)
+	.setColor(15928589)
+	.addField('**Support**', `>>> There are many ways to get support. Please use our ticketing system to recieve such support.`)
+	.addField('**Suggestions**', `>>> Suggestions are handled via '.suggest <suggestion>'.`)
+	.addField('**Punishments**', `>>> Punishments are not always set and are more frequently handled on a case by case basis.`)
 			let sayFinal = new Discord.MessageEmbed() //embed
-	.setTitle("Final Words")
-	.setThumbnail(`${logo}`)
-	.setDescription('These rules are based on common sense. Be a kind, respectful and senseful member of the community and you will always have the benefit of the doubt!')
-	.setColor(9895936)
-	.addField('➤ By participating and entering the server, you agree to abide by the rules to the best of your ability.', '➤ In moving to the main chat, you confirm you have read and agreed to the rules.')
+	.setAuthor('Final Words', `${logo}`)
+	.setColor(3080406)
+	.setDescription('These rules are based on common sense. Be a kind, respectful and reasonable member of the community and you will always have the benefit of the doubt!')
+	.addField('**By participating and entering the server, you agree to abide by the rules to the best of your ability.**', 'In moving to the main chat, you confirm you have read and agreed to the rules.')
 
 	
 message.delete();
-message.channel.send(sayGeneral);
-message.channel.send(sayText);
-message.channel.send(sayVoice);
+message.channel.send(sayChat);
+message.channel.send(sayPS);
 message.channel.send(sayFinal);
 	}
 };
