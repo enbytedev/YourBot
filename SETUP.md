@@ -19,4 +19,5 @@ Set owner ID and command prefix in `config/admin.json`
 
 # Operation
 The entry point is `main.js`
-*It is highly recommended that you install PM2, a node process manager.*
+
+[It is highly recommended that you install PM2, a node process manager.](https://pm2.keymetrics.io)
