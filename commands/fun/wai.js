@@ -19,7 +19,7 @@ module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'wai',
-			group: 'second',
+			group: 'fun',
 			description: 'What are you? | `.wai`',
 			memberName: 'wai',
 			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],

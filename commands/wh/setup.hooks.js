@@ -7,7 +7,7 @@ module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'setup.hooks',
-			group: 'third',
+			group: 'wh',
 			description: 'Setup webhooks. | `.setup.hooks`',
 			memberName: 'setup.hooks',
 			clientPermissions: ['MANAGE_WEBHOOKS', 'SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],

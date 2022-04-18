@@ -13,7 +13,7 @@ module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'au',
-			group: 'second',
+			group: 'fun',
 			description: 'Who is Among Us? | `.au @user`',
 			memberName: 'au',
 			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],

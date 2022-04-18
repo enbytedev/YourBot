@@ -6,27 +6,27 @@ const {server_name} = require('../../config/branding.json');
 module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
-			name: 'a2',
-			group: 'first',
-			description: 'Urgent announcement. | `.a2 <Urgent Announcement Message>`',
-			memberName: 'urgent',
+			name: 'a0',
+			group: 'admin',
+			description: 'Announce an update. | `.a0 <Update Message>`',
+			memberName: 'update',
 			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],
 			userPermissions: ['ADMINISTRATOR'],
 		});
 	}
 
 	run(message) {
-	const attachment = new Discord
-	.MessageAttachment('./assets/icons/u_announcement.png', 'u_announcement.png')
-	
+		const attachment = new Discord
+		.MessageAttachment('./assets/icons/update.png', 'update.png')
+		
 		let say = new Discord.MessageEmbed() //embed
-		.setTitle(`${server_name} Urgent Announcement`)
+		.setTitle(`${server_name} Update`)
 		.setDescription(message.content.split(" ").slice(1).join(" "))
-		.setColor(9895936)
+		.setColor(57099)
 		.attachFiles(attachment)
 		.addField('\u200b', '\u200b')
-		.addField(`This is an official urgent announcement!`, `Please read this carefully in it's entirety, as it will likely affect you in some way.`)
-		.setThumbnail('attachment://u_announcement.png')
+		.addField(`This is an official update!`, `Please read for an exciting update!`)
+		.setThumbnail('attachment://update.png')
 		.setFooter(`Signed, ${message.member.user.tag} on behalf of the ${server_name} team.`, `${logo}`);
 		message.delete()
 		message.channel.send(say);

@@ -7,7 +7,7 @@ module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'squid',
-			group: 'second',
+			group: 'fun',
 			description: 'Daily Squidward | `.squid`',
 			memberName: 'squid',
 			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'ADD_REACTIONS', 'MANAGE_MESSAGES'],

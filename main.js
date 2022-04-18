@@ -2,25 +2,15 @@ const { CommandoClient } = require('discord.js-commando');
 const path = require('path');
 const Discord = require("discord.js");
 const {token} = require('./config/token.json');
-const {logo} = require('./config/branding.json');
-const {server_name} = require('./config/branding.json');
-
-const {owner_id} = require('./config/admin.json');
-const {prefix} = require('./config/admin.json');
-
-const {welcome_channel_id} = require('./config/welcome.json');
-const {icon1} = require('./config/welcome.json');
-const {icon2} = require('./config/welcome.json');
-const {icon3} = require('./config/welcome.json');
-const {field1} = require('./config/welcome.json');
-const {field2} = require('./config/welcome.json');
-const {field3} = require('./config/welcome.json');
+const {logo, server_name, activity} = require('./config/branding.json');
+const {owner_id, prefix} = require('./config/admin.json');
+const {welcome_channel_id, icon1, icon2, icon3, field1, field2, field3} = require('./config/welcome.json');
 
 const client = new CommandoClient({
   commandPrefix: `${prefix}`,
   owner: `${owner_id}`,
   invite: '',
-	unknownCommandResponse: false,
+	unknownCommandResponse: false
 });
 
 // BEGIN WELCOME MESSAGE
@@ -43,10 +33,10 @@ const welcomeEmbed = new Discord.MessageEmbed()
 client.registry
   .registerDefaultTypes()
   .registerGroups([
-    ['first', 'Admin commands'],
-    ['second', 'Fun commands'],
-    ['third', 'Webhook commands'],
-    ['fourth', 'User commands'],
+    ['admin', 'Admin commands'],
+    ['fun', 'Fun commands'],
+    ['wh', 'Webhook commands'],
+    ['user', 'User commands'],
   ])
   .registerDefaultGroups()
   .registerDefaultCommands()
@@ -54,7 +44,7 @@ client.registry
 
 client.once('ready', () => {
   console.log(`Logged in as ${client.user.tag}! (${client.user.id})`);
-  client.user.setActivity('based on A-Bot');
+  client.user.setActivity(`${activity}`);
 });
 
 client.on('error', console.error);

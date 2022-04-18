@@ -8,7 +8,7 @@ module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'error',
-			group: 'second',
+			group: 'fun',
 			description: 'Tell someone they need a stacktrace if they want help. | `.error`',
 			memberName: 'error',
 			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],

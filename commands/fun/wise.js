@@ -8,7 +8,7 @@ module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'wise',
-			group: 'second',
+			group: 'fun',
 			description: 'Get an Inspirobot Quote. | `.wise`',
 			memberName: 'wise',
 			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],

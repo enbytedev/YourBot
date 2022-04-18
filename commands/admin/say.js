@@ -7,7 +7,7 @@ module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'say',
-			group: 'first',
+			group: 'admin',
 			description: 'Echo a message. | `.say <Message to repeat>`',
 			memberName: 'say',
 			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],

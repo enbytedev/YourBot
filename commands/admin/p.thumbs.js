@@ -7,7 +7,7 @@ module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'p.thumbs',
-			group: 'first',
+			group: 'admin',
 			description: 'Thumb poll. | `.p.thumbs <The Question>`',
 			memberName: 'p.thumbs',
 			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'ADD_REACTIONS', 'MANAGE_MESSAGES'],

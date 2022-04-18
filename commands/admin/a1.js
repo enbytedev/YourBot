@@ -7,7 +7,7 @@ module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'a1',
-			group: 'first',
+			group: 'admin',
 			description: 'Announcement. | `.a1 <Announcement Message>`',
 			memberName: 'announce',
 			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],

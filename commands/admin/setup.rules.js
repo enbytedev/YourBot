@@ -7,7 +7,7 @@ module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'setup.rules',
-			group: 'first',
+			group: 'admin',
 			description: 'Generate rule text. | `.setup.rules`',
 			memberName: 'setup.rules',
 			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],

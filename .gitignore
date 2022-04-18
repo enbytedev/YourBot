@@ -6,3 +6,4 @@ commands/.DS_Store
 .idea/modules.xml
 .idea/misc.xml
 .idea/A-Bot.iml
+node_modules/**

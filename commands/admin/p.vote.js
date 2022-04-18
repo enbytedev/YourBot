@@ -8,8 +8,8 @@ module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'p.vote',
-			group: 'first',
-			description: 'Advanced poll. | `.p.vote <The Question> "<Response 1>" "<Response 2-26>"`',
+			group: 'admin',
+			description: 'Advanced poll. | `.p.vote <The Question> ~<Response 1>~ ~<Response 2-26>~',
 			memberName: 'p.vote',
 			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'ADD_REACTIONS', 'MANAGE_MESSAGES'],
 			userPermissions: ['ADMINISTRATOR'],
@@ -51,7 +51,7 @@ module.exports = class a0Command extends Command {
 	let question = [];
 
 	for (let i = 1; i < args.length; i++) {
-		if (args[i].startsWith('"')) break;
+		if (args[i].startsWith('~')) break;
 		else question.push(args[i]);
 	}
 
@@ -60,7 +60,7 @@ module.exports = class a0Command extends Command {
 	// Defining the choices...
 	const choices = [];
 
-	const regex = /(["'])((?:\\\1|\1\1|(?!\1).)*)\1/g;
+	const regex = /([~'])((?:\\\1|\1\1|(?!\1).)*)\1/g;
 	let match;
 	while (match = regex.exec(args.join(' '))) choices.push(match[2]);
 

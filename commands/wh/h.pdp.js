@@ -7,10 +7,10 @@ const {hook_url} = require('../../config/branding.json');
 module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
-			name: 'h.slj',
-			group: 'third',
-			description: 'Samuel L Jackson control. | `.h.slj <Message to repeat>`',
-			memberName: 'h.slj',
+			name: 'h.pdp',
+			group: 'wh',
+			description: 'PewDiePie. | `.h.pdp <Message to repeat>`',
+			memberName: 'h.pdp',
 			clientPermissions: ['MANAGE_WEBHOOKS', 'SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],
 			userPermissions: ['ADMINISTRATOR'],
 		});
@@ -22,8 +22,8 @@ module.exports = class a0Command extends Command {
 		const { Webhook } = require('discord-webhook-node');
 		const hook = new Webhook(`${hook_url}`);
 		 
-		const IMAGE_URL = 'https://i.imgur.com/r6AlKOF.jpg';
-		hook.setUsername('Samuel L Jackson');
+		const IMAGE_URL = 'https://i.imgur.com/Q9va3Sl.jpg';
+		hook.setUsername('PewDiePie');
 		hook.setAvatar(IMAGE_URL);
 		 
 		hook.send(message.content.split(" ").slice(1).join(" "));

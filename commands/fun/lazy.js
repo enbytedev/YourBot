@@ -106,7 +106,7 @@ module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'lazy',
-			group: 'second',
+			group: 'fun',
 			description: 'Your lazy excuse for not coding. | `.lazy`',
 			memberName: 'lazy',
 			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],

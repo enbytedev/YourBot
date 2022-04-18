@@ -8,7 +8,7 @@ module.exports = class a0Command extends Command {
 	constructor(client) {
 		super(client, {
 			name: 'suggest',
-			group: 'fourth',
+			group: 'user',
 			description: 'Make a suggestion. | `.suggest <Suggestion Text>`',
 			memberName: 'suggest',
 			clientPermissions: ['SEND_MESSAGES', 'VIEW_CHANNEL', 'MANAGE_MESSAGES'],

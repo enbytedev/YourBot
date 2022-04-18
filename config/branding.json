@@ -1,5 +1,6 @@
 {
 	"logo": "https://i.imgur.com/xxxxx.png",
 	"server_name": "NAME",
+	"activity": "with our community!",
 	"hook_url": "https://discordapp.com/api/webhooks/xxxxx/xxxxx"
 }
