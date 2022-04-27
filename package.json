@@ -6,21 +6,12 @@
   "author": "",
   "license": "GPL-3.0",
   "dependencies": {
-    "cjs": "0.0.11",
-    "discord-giveaways": "^4.2.1",
-    "discord-player": "^2.3.1",
     "discord-webhook-node": "^1.1.8",
     "discord.js": "^12.3.1",
     "discord.js-commando": "git+https://github.com/discordjs/Commando.git",
-    "dotenv": "^4.0.0",
-    "ejs": "^3.0.2",
-    "imageapi.js": "^1.0.11",
-    "luxon": "^1.22.0",
-    "request": "^2.81.0",
-    "uws": "^8.14.0"
+    "request": "^2.81.0"
   },
   "scripts": {
-    "start": "node main.js",
-    "start_shards": "node index.js"
+    "start": "node main.js"
   }
 }
