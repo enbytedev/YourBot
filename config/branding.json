@@ -1,4 +1,11 @@
 {
+	"INFO": {
+		"INFO_logo": "A direct link to an image file to use as the desired logo.",
+		"INFO_server_name": "The name of the server or community to be displayed on announcements and such.",
+		"INFO_activity": "YourBot's status.",
+		"INFO_hook_url": "This is an optional link to the webhook created by the creation command."
+	},
+	
 	"logo": "https://i.imgur.com/xxxxx.png",
 	"server_name": "NAME",
 	"activity": "with our community!",

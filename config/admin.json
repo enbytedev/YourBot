@@ -1,4 +1,11 @@
 {
-  "owner_id": "259063263604506634",
-  "prefix": "."
+  "INFO": {
+    "INFO_owner_id": "The ID of the bot owner's Discord account.",
+    "INFO_prefix": "The prefix to use for commands.",
+    "INFO_suggestionChannel": "The channel to send suggestions from the suggest command."
+  },
+  
+  "owner_id": "OWNER ID",
+  "prefix": ".",
+  "suggestionChannel": "CHANNEL ID"
 }
