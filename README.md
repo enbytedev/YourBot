@@ -22,7 +22,7 @@
     </a>
     <a href="/">
       <img alt="Status" src="https://img.shields.io/badge/Status-Stable-008000?style=for-the-badge" />
-    </a>
-    <a href="https://github.com/Aerial-Laptop/YourBot/blob/master/SETUP.md"><h3 align="center">Setup Instructions</h3></a>
-    <h5 align="center"><i>Icons by Freepik and Smashicons</i></h5>
+        <hr>
+    <a href="https://github.com/Aerial-Laptop/.github/blob/main/al-docs/NODEJS-SETUP.md">General Setup Documentation for NodeJS</a> from Aerial Laptop
+          <h5><i>Icons by Freepik and Smashicons</i></h5>
 </p>
