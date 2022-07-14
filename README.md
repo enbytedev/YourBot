@@ -1,5 +1,5 @@
 <p align="center">
-  <a><img src="https://raw.githubusercontent.com/Aerial-Laptop/YourBot/master/icon.png" width="250" height="250" /></a>
+  <a><img src="https://raw.githubusercontent.com/enbytedev/YourBot/master/PROJECT.png" width="250" height="250" /></a>
 
   <h2 align="center">YourBot</h2>
  <p align="center"><i>"Because source code with convoluted configuration isn't enough!"</i></p>
